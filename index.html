@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            background-color: rgba(32, 187, 226, 0.459);
+            border-color: rgba(32, 187, 226, 0.459);
+        }
+        #mainwrapper{
+          display: flex; 
+          justify-content: center;
+          gap: 6rem;
+        }
+        h2,input
+        {
+          margin: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="mainwrapper" >
+
+    <div style="border: 2px solid orange; padding: 20px;">
+      <h2>Fill Style</h2>
+      <input id="fill" type="color">      
+      <label for="fill">Change</label>
+      <h2>Stroke Style</h2>
+      <input id="stroke" type="color">   
+      <label for="stroke">Change</label>
+    </div>
+    <div>
+    <button id="linwe">
+      <img src="free.png" width="200" height="150" alt="">
+    </button>
+    <button id="line">
+      <svg id="line_svg" width="200" hight="100">
+        <g fill="none" stroke="orange">
+          <path  stroke-width="2" d="M8 10 L220 200" />
+        </g>
+      </svg>
+    </button>
+    <button id="rect">
+      <svg id="rect_svg" width="200" hight="400">
+        <rect width="170" height="100" x="16" y="30"
+        fill="orange">
+      </svg>
+    </button>
+    <button  id="circle">
+      <svg id="circle_svg" width="200" hight="100">
+        <circle cx="100" cy="70" r="40" fill="orange"/>
+      </svg>
+    </button>
+    <br><br>
+    <canvas id="mycanva" width="800" height="500" style="border: 2px solid rgba(32, 187, 226, 0.459);">
+      <svg id="clo" viewBox="0 0 400 500" >
+      <line id="sho" x1="0" y1="1" x2="10" y2="10" stroke="black" stroke-width="1" />
+    </svg>
+    </canvas>    
+    <span id="point"></span>
+    <script src="task3.js"></script>
+ </div>    
+</div>
+ </body>
+</html>
