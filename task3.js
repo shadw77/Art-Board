@@ -6,10 +6,6 @@ document.getElementById("line").addEventListener("click", function () {
   var ranx2 = Math.floor(Math.random() * 500) + 1;
   var rany2 = Math.floor(Math.random() * 500) + 1;
 
-  // var x = document.getElementById("line_svg").cloneNode(true);
-  // var move = "translate(" + ranx + "," + rany + ")";
-  // x.setAttributeNS(null, "transform", move);
-
   var cont = canv.getContext("2d");
   cont.moveTo(ranx, rany);
   cont.lineTo(ranx2, rany2);
@@ -67,38 +63,4 @@ function fun() {
       firs = true;
     }
   });
-
-  // var path = document.getElementById("sho");
-  // // var point = document.getElementById("point");
-  // var x;
-  // var y;
-
-  // var flag = false;
-  // window.addEventListener("click", function (event) {
-  //   event.preventDefault();
-
-  //   x = event.clientX;
-  //   y = event.clientY;
-  //   flag = true;
-
-  //   if (flag == true) {
-  //     var cont = canv.getContext("2d");
-  //     cont.moveTo(Math.floor(x), Math.floor(y));
-  //     window.addEventListener("click", function (event) {
-  //       console.log(
-  //         Math.floor(x),
-  //         Math.floor(y),
-  //         Math.floor(event.clientX),
-  //         Math.floor(event.clientY)
-  //       );
-
-  //       cont.lineTo(Math.floor(event.clientX), Math.floor(event.clientY));
-  //       // console.log(x, y, event.clientX, event.clientY);
-  //       cont.stroke();
-  //       console.log(cont);
-  //       // canv.appendChild(cont);
-  //       flag = false;
-  //     });
-  //   }
-  // });
 }
